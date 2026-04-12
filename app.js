@@ -301,18 +301,15 @@ document.getElementById('email-form').addEventListener('submit', function(e) {
   const email = document.getElementById('email-input').value;
   if (!email) return;
   
-  // Store in localStorage for later Beehiiv integration
-  try {
-    const stored = JSON.parse(localStorage.getItem('bmiforglp1_emails') || '[]');
-    stored.push({
-      email: email,
-      timestamp: new Date().toISOString(),
-      bmi: document.getElementById('bmi-number').textContent
-    });
-    localStorage.setItem('bmiforglp1_emails', JSON.stringify(stored));
-  } catch (err) {
-    // localStorage might not be available
-  }
+  // Store email submission in memory for later Beehiiv integration
+  // In production, this would POST to a Beehiiv API endpoint
+  if (!window._bmiEmails) window._bmiEmails = [];
+  window._bmiEmails.push({
+    email: email,
+    timestamp: new Date().toISOString(),
+    bmi: document.getElementById('bmi-number').textContent
+  });
+  console.log('Email captured:', email);
   
   // Show success
   document.getElementById('email-form').classList.add('hidden');
