@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator for GLP-1 | Check If You Qualify for Ozempic, Wegovy &amp; More</title>
+  <meta name="description" content="Free BMI calculator to check if you may qualify for GLP-1 weight loss medications like Ozempic, Wegovy, Mounjaro, and Zepbound. Instant results.">
+  <link rel="canonical" href="https://www.bmiforglp1.com/">
+
+  <!-- Fonts: General Sans for body, DM Serif Display for headings -->
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d9488'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='16' fill='white'%3EBMI%3C/text%3E%3C/svg%3E">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "BMI Calculator for GLP-1 Eligibility",
+    "description": "Free BMI calculator to check if you may qualify for GLP-1 weight loss medications like Ozempic, Wegovy, Mounjaro, and Zepbound.",
+    "url": "https://www.bmiforglp1.com/",
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is BMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Body Mass Index (BMI) is a numerical value calculated from your height and weight. It provides a general indication of whether your weight falls within a healthy range. BMI = weight (kg) / height (m)². While not a perfect measure of health, BMI is widely used by healthcare providers as a screening tool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are GLP-1 medications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GLP-1 receptor agonists are a class of medications that mimic the GLP-1 hormone. Brand names include Ozempic and Wegovy (semaglutide), Mounjaro and Zepbound (tirzepatide), Saxenda (liraglutide), and Trulicity (dulaglutide)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do GLP-1 medications work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GLP-1 medications work by mimicking the GLP-1 hormone, which slows gastric emptying so food stays in your stomach longer, reduces appetite signals in the brain, helps regulate blood sugar by stimulating insulin release, and may reduce cravings and food-focused thinking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What BMI qualifies for GLP-1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FDA guidelines indicate BMI ≥ 30 (obesity) qualifies for GLP-1 weight loss medications. BMI 27-29.9 (overweight) may qualify if you have at least one weight-related condition such as type 2 diabetes, hypertension, or dyslipidemia."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-link" aria-label="BMIforGLP1 Home">
+        <svg class="logo-svg" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="BMIforGLP1 logo">
+          <!-- Gauge icon -->
+          <path d="M20 32C12.268 32 6 25.732 6 18C6 10.268 12.268 4 20 4C27.732 4 34 10.268 34 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="20" cy="18" r="2.5" fill="var(--color-primary)"/>
+          <line x1="20" y1="18" x2="28" y2="10" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Tick marks -->
+          <line x1="11" y1="7" x2="12.5" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="20" y1="5" x2="20" y2="7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="29" y1="7" x2="27.5" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Text -->
+          <text x="42" y="24" font-family="'DM Serif Display', Georgia, serif" font-size="22" fill="currentColor">BMI</text>
+          <text x="75" y="24" font-family="'General Sans', sans-serif" font-weight="400" font-size="14" fill="var(--color-text-muted)">for</text>
+          <text x="96" y="24" font-family="'DM Serif Display', Georgia, serif" font-size="22" fill="var(--color-primary)">GLP-1</text>
+        </svg>
+      </a>
+      <nav class="header-nav">
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#learn" class="nav-link">Learn</a>
+        <button data-theme-toggle aria-label="Switch to dark mode" class="theme-toggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-badge">Free BMI Assessment Tool</div>
+        <h1 class="hero-title">Could GLP-1 Medication Be Right for You?</h1>
+        <p class="hero-subtitle">Use our free BMI calculator to see if you may qualify for GLP-1 weight loss treatment — in under 30 seconds.</p>
+        <p class="hero-disclaimer">Not medical advice. Always consult a licensed healthcare provider.</p>
+        <a href="#calculator" class="hero-cta">Calculate My BMI <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculator">
+      <div class="container">
+        <div class="calculator-card">
+          <div class="calculator-header">
+            <h2 class="calculator-title">BMI Calculator</h2>
+            <p class="calculator-desc">Enter your details below for an instant assessment.</p>
+          </div>
+
+          <form id="bmi-form" class="calculator-form" novalidate>
+            <!-- Age -->
+            <div class="form-group">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" id="age" name="age" min="18" max="120" placeholder="e.g. 35" required class="form-input">
+              <span class="form-hint">Must be 18 or older</span>
+            </div>
+
+            <!-- Sex -->
+            <div class="form-group">
+              <label class="form-label">Biological Sex</label>
+              <div class="toggle-group" role="radiogroup" aria-label="Biological sex">
+                <button type="button" class="toggle-btn active" data-value="male" role="radio" aria-checked="true">Male</button>
+                <button type="button" class="toggle-btn" data-value="female" role="radio" aria-checked="false">Female</button>
+              </div>
+            </div>
+
+            <!-- Height -->
+            <div class="form-group">
+              <div class="label-row">
+                <label class="form-label">Height</label>
+                <button type="button" class="unit-switch" id="height-unit-switch" aria-label="Switch height units">
+                  <span class="unit-active" data-unit="imperial">ft/in</span>
+                  <span data-unit="metric">cm</span>
+                </button>
+              </div>
+              <div class="height-inputs" id="height-imperial">
+                <div class="input-with-unit">
+                  <input type="number" id="height-ft" name="height-ft" min="3" max="8" placeholder="5" required class="form-input">
+                  <span class="input-unit">ft</span>
+                </div>
+                <div class="input-with-unit">
+                  <input type="number" id="height-in" name="height-in" min="0" max="11" placeholder="8" required class="form-input">
+                  <span class="input-unit">in</span>
+                </div>
+              </div>
+              <div class="height-inputs hidden" id="height-metric">
+                <div class="input-with-unit">
+                  <input type="number" id="height-cm" name="height-cm" min="100" max="250" placeholder="173" class="form-input">
+                  <span class="input-unit">cm</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weight -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="weight" class="form-label">Current Weight</label>
+                <button type="button" class="unit-switch" id="weight-unit-switch" aria-label="Switch weight units">
+                  <span class="unit-active" data-unit="imperial">lbs</span>
+                  <span data-unit="metric">kg</span>
+                </button>
+              </div>
+              <div id="weight-imperial">
+                <div class="input-with-unit">
+                  <input type="number" id="weight-lbs" name="weight-lbs" min="50" max="1000" placeholder="185" required class="form-input">
+                  <span class="input-unit">lbs</span>
+                </div>
+              </div>
+              <div id="weight-metric" class="hidden">
+                <div class="input-with-unit">
+                  <input type="number" id="weight-kg" name="weight-kg" min="20" max="500" placeholder="84" class="form-input">
+                  <span class="input-unit">kg</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goal Weight -->
+            <div class="form-group">
+              <label class="form-label">Goal Weight <span class="optional-tag">Optional</span></label>
+              <div id="goal-imperial">
+                <div class="input-with-unit">
+                  <input type="number" id="goal-lbs" name="goal-lbs" min="50" max="500" placeholder="160" class="form-input">
+                  <span class="input-unit" id="goal-unit-label">lbs</span>
+                </div>
+              </div>
+              <div id="goal-metric" class="hidden">
+                <div class="input-with-unit">
+                  <input type="number" id="goal-kg" name="goal-kg" min="20" max="300" placeholder="73" class="form-input">
+                  <span class="input-unit">kg</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="calculate-btn" id="calculate-btn">
+              <span class="btn-text">Calculate My BMI</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Results (hidden initially) -->
+        <div class="results-card hidden" id="results-section">
+          <div class="results-header">
+            <h2 class="results-title">Your Results</h2>
+          </div>
+
+          <!-- BMI Number -->
+          <div class="bmi-result">
+            <div class="bmi-number" id="bmi-number">--</div>
+            <div class="bmi-label">Your BMI</div>
+            <div class="bmi-category" id="bmi-category">--</div>
+          </div>
+
+          <!-- BMI Gauge -->
+          <div class="bmi-gauge-wrapper">
+            <svg class="bmi-gauge" viewBox="0 0 300 190" aria-label="BMI scale gauge">
+              <!-- Colored arc segments -->
+              <!-- Underweight: blue -->
+              <path class="gauge-seg" d="M 30 160 A 130 130 0 0 1 73 48" fill="none" stroke="#3b82f6" stroke-width="22" stroke-linecap="round"/>
+              <!-- Normal: green -->
+              <path class="gauge-seg" d="M 73 48 A 130 130 0 0 1 150 30" fill="none" stroke="#22c55e" stroke-width="22"/>
+              <!-- Overweight: yellow -->
+              <path class="gauge-seg" d="M 150 30 A 130 130 0 0 1 215 45" fill="none" stroke="#eab308" stroke-width="22"/>
+              <!-- Obese I: orange -->
+              <path class="gauge-seg" d="M 215 45 A 130 130 0 0 1 255 85" fill="none" stroke="#f97316" stroke-width="22"/>
+              <!-- Obese II: red -->
+              <path class="gauge-seg" d="M 255 85 A 130 130 0 0 1 272 125" fill="none" stroke="#ef4444" stroke-width="22"/>
+              <!-- Obese III: deep red -->
+              <path class="gauge-seg" d="M 272 125 A 130 130 0 0 1 280 160" fill="none" stroke="#b91c1c" stroke-width="22" stroke-linecap="round"/>
+              
+              <!-- Labels along the arc -->
+              <text x="25" y="178" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">15</text>
+              <text x="68" y="38" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">18.5</text>
+              <text x="150" y="18" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">25</text>
+              <text x="222" y="34" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">30</text>
+              <text x="262" y="76" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">35</text>
+              <text x="280" y="118" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">40</text>
+              <text x="285" y="178" font-size="11" fill="var(--color-text-faint)" font-family="'General Sans', sans-serif" text-anchor="middle">45</text>
+
+              <!-- Pointer indicator -->
+              <g id="gauge-pointer">
+                <!-- Needle line from center to near edge of arc -->
+                <line x1="150" y1="160" x2="150" y2="50" stroke="var(--color-text)" stroke-width="4" stroke-linecap="round"/>
+                <!-- Arrowhead at tip -->
+                <circle cx="150" cy="50" r="6" fill="var(--color-text)"/>
+                <!-- Hub circle -->
+                <circle cx="150" cy="160" r="12" fill="var(--color-text)"/>
+                <circle cx="150" cy="160" r="6" fill="var(--color-surface)"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Eligibility Assessment -->
+          <div class="eligibility-card" id="eligibility-card">
+            <div class="eligibility-icon" id="eligibility-icon"></div>
+            <h3 class="eligibility-title" id="eligibility-title">--</h3>
+            <p class="eligibility-text" id="eligibility-text">--</p>
+          </div>
+
+          <!-- Goal weight info -->
+          <div class="goal-info hidden" id="goal-info">
+            <div class="goal-stat">
+              <span class="goal-stat-label">Weight to Goal</span>
+              <span class="goal-stat-value" id="weight-to-goal">--</span>
+            </div>
+            <div class="goal-stat">
+              <span class="goal-stat-label">Goal BMI</span>
+              <span class="goal-stat-value" id="goal-bmi">--</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a href="https://www.glp1maps.com/search" target="_blank" rel="noopener" class="provider-cta">
+            Find a GLP-1 Provider Near You
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Email Capture (hidden until results show) -->
+        <div class="email-card hidden" id="email-section">
+          <div class="email-inner">
+            <h3 class="email-title">Want a detailed GLP-1 readiness report?</h3>
+            <p class="email-desc">Enter your email and we'll send you a personalized report with next steps.</p>
+            <form id="email-form" class="email-form">
+              <input type="email" id="email-input" placeholder="your@email.com" required class="form-input email-input-field">
+              <button type="submit" class="email-btn">Send My Report</button>
+            </form>
+            <div class="email-success hidden" id="email-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <p>Check your inbox! In the meantime, <a href="https://www.glp1maps.com/search" target="_blank" rel="noopener">find GLP-1 providers near you →</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section class="education-section" id="learn">
+      <div class="container">
+        <h2 class="section-title">Understanding BMI &amp; GLP-1 Medications</h2>
+        <p class="section-subtitle">Everything you need to know before talking to your doctor.</p>
+
+        <div class="faq-grid">
+          <!-- Card 1 -->
+          <details class="faq-card" open>
+            <summary class="faq-summary">
+              <div class="faq-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <span class="faq-question">What is BMI?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Body Mass Index (BMI) is a numerical value calculated from your height and weight. It provides a general indication of whether your weight falls within a healthy range.</p>
+              <p><strong>BMI = weight (kg) ÷ height (m)²</strong></p>
+              <p>While not a perfect measure of health — it doesn't account for muscle mass, bone density, or fat distribution — BMI is widely used by healthcare providers as an initial screening tool for weight-related health risks.</p>
+            </div>
+          </details>
+
+          <!-- Card 2 -->
+          <details class="faq-card">
+            <summary class="faq-summary">
+              <div class="faq-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+              </div>
+              <span class="faq-question">What are GLP-1 medications?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>GLP-1 receptor agonists are a class of medications originally developed for type 2 diabetes that have shown remarkable results for weight management. They mimic the GLP-1 hormone your body naturally produces.</p>
+              <p><strong>Popular GLP-1 medications include:</strong></p>
+              <ul>
+                <li><strong>Ozempic</strong> &amp; <strong>Wegovy</strong> (semaglutide) by Novo Nordisk</li>
+                <li><strong>Mounjaro</strong> &amp; <strong>Zepbound</strong> (tirzepatide) by Eli Lilly</li>
+                <li><strong>Saxenda</strong> (liraglutide) by Novo Nordisk</li>
+                <li><strong>Trulicity</strong> (dulaglutide) by Eli Lilly</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Card 3 -->
+          <details class="faq-card">
+            <summary class="faq-summary">
+              <div class="faq-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              </div>
+              <span class="faq-question">How do GLP-1 medications work?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>GLP-1 medications work by mimicking the glucagon-like peptide-1 hormone, which plays several key roles:</p>
+              <ul>
+                <li><strong>Slows gastric emptying</strong> — food stays in your stomach longer, helping you feel full</li>
+                <li><strong>Reduces appetite signals</strong> — acts on the brain to decrease hunger</li>
+                <li><strong>Regulates blood sugar</strong> — stimulates insulin release when needed</li>
+                <li><strong>May reduce cravings</strong> — decreases food-focused thinking and reward-driven eating</li>
+              </ul>
+              <p>Clinical trials have shown average weight loss of 15-22% of body weight with newer GLP-1 medications when combined with lifestyle changes.</p>
+            </div>
+          </details>
+
+          <!-- Card 4 -->
+          <details class="faq-card">
+            <summary class="faq-summary">
+              <div class="faq-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              </div>
+              <span class="faq-question">What BMI qualifies for GLP-1?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>According to FDA guidelines and obesity medicine standards:</p>
+              <ul>
+                <li><strong>BMI ≥ 30</strong> (Obesity) — You may qualify for GLP-1 weight loss medications. The FDA has approved several GLP-1 drugs for adults with a BMI of 30 or higher.</li>
+                <li><strong>BMI 27–29.9</strong> (Overweight) — You may qualify if you also have at least one weight-related health condition, such as type 2 diabetes, hypertension (high blood pressure), or dyslipidemia (high cholesterol).</li>
+                <li><strong>BMI &lt; 27</strong> — GLP-1 medications are generally not indicated for weight loss at this BMI, though your doctor may consider them for blood sugar management if you have type 2 diabetes.</li>
+              </ul>
+              <p>Always consult a healthcare provider for a personalized assessment. BMI is just one factor in determining eligibility.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+      <div class="container final-cta-inner">
+        <h2 class="final-cta-title">Ready to Take the Next Step?</h2>
+        <p class="final-cta-text">Connect with a licensed GLP-1 provider in your area who can evaluate your eligibility and create a personalized treatment plan.</p>
+        <a href="https://www.glp1maps.com/search" target="_blank" rel="noopener" class="final-cta-btn">
+          Find a GLP-1 Provider Near You
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 32C12.268 32 6 25.732 6 18C6 10.268 12.268 4 20 4C27.732 4 34 10.268 34 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="20" cy="18" r="2.5" fill="var(--color-primary)"/>
+            <line x1="20" y1="18" x2="28" y2="10" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="11" y1="7" x2="12.5" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="20" y1="5" x2="20" y2="7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="29" y1="7" x2="27.5" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <text x="42" y="24" font-family="'DM Serif Display', Georgia, serif" font-size="22" fill="currentColor">BMI</text>
+            <text x="75" y="24" font-family="'General Sans', sans-serif" font-weight="400" font-size="14" fill="var(--color-text-muted)">for</text>
+            <text x="96" y="24" font-family="'DM Serif Display', Georgia, serif" font-size="22" fill="var(--color-primary)">GLP-1</text>
+          </svg>
+          <p class="footer-credit">Created by Mark "Shep" Shepherd</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.glp1maps.com" target="_blank" rel="noopener">GLP1Maps.com</a>
+          <a href="https://www.theglp1guide.net" target="_blank" rel="noopener">TheGLP1Guide.net</a>
+          <a href="#" rel="noopener">Terms &amp; Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">BMIforGLP1.com is an educational tool only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before starting any medication.</p>
+        <p class="footer-copy">&copy; 2025 BMIforGLP1.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
