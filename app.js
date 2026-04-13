@@ -251,6 +251,14 @@ document.getElementById('bmi-form').addEventListener('submit', function(e) {
   resultsSection.classList.remove('hidden');
   emailSection.classList.remove('hidden');
   
+  // Show monetization sections
+  const teleSec = document.getElementById('telehealth-section');
+  const savSec = document.getElementById('savings-section');
+  const rxSec = document.getElementById('rx-card-section');
+  if (teleSec) teleSec.classList.remove('hidden');
+  if (savSec) savSec.classList.remove('hidden');
+  if (rxSec) rxSec.classList.remove('hidden');
+  
   // Animate BMI number
   animateNumber(document.getElementById('bmi-number'), bmi);
   
