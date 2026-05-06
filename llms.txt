@@ -1,0 +1,29 @@
+# BMI for GLP-1
+
+> BMI calculator and FDA-prescribing-range guide for GLP-1 medications. Find out where your BMI falls in the published range for Ozempic, Wegovy, Mounjaro, and Zepbound.
+
+BMI for GLP-1 is a free, neutral reference tool. It calculates your BMI and compares it to the FDA-published prescribing range for the four major branded GLP-1 medications. The site does not offer eligibility determinations or medical advice — every prescription decision is made by a licensed healthcare provider. Created by Mark "Shep" Shepherd as a service of Maps Health Network, LLC.
+
+## Core pages
+
+- [Home — BMI Calculator](https://www.bmiforglp1.com/): Free BMI calculator with FDA-published prescribing-range comparison for GLP-1 medications
+- [About BMI for GLP-1](https://www.bmiforglp1.com/about.html): Mission, methodology, and the founder's story
+- [Ozempic BMI Range](https://www.bmiforglp1.com/ozempic-bmi.html): FDA-published prescribing range for Ozempic (semaglutide)
+- [Wegovy BMI Range](https://www.bmiforglp1.com/wegovy-bmi.html): FDA-published prescribing range for Wegovy (semaglutide 2.4 mg)
+- [Mounjaro BMI Range](https://www.bmiforglp1.com/mounjaro-bmi.html): FDA-published prescribing range for Mounjaro (tirzepatide)
+- [Zepbound BMI Range](https://www.bmiforglp1.com/zepbound-bmi.html): FDA-published prescribing range for Zepbound (tirzepatide)
+
+## Founder
+
+Mark "Shep" Shepherd, 35 years in U.S. medical device sales (26 at Medtronic, two-time U.S. Representative of the Year). GLP-1 patient who lost 50 pounds in 9 months on Mounjaro. Creator of The S.H.E.P.S. Method. Full bio at https://shepsmethod.com/about.html.
+
+## Other properties
+
+- [GLP-1 Maps](https://www.glp1maps.com/): Directory of GLP-1 providers in the U.S.
+- [GLP-1 Receptionist](https://glp1receptionist.com/): AI voice receptionist for GLP-1 clinics.
+- [The S.H.E.P.S. Method](https://shepsmethod.com/): The book and community for patients on GLP-1.
+- [Insurance GLP-1](https://www.insuranceglp1.com/): Insurance coverage guide for Ozempic, Wegovy, Mounjaro, Zepbound.
+
+## Disclaimer
+
+BMI for GLP-1 is a reference tool, not medical advice. The BMI prescribing-range information presented is general FDA-published guidance — not a recommendation, diagnosis, or candidacy determination. Whether any GLP-1 medication is appropriate for you is a clinical decision your licensed provider will make. Brand marks (BMI for GLP-1, GLP-1 Maps, The S.H.E.P.S. Method) are service marks pending USPTO registration.
