@@ -220,6 +220,7 @@
       </a>
       <nav class="header-nav">
         <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#medication-eligibility" class="nav-link">Medications</a>
         <a href="#learn" class="nav-link">Learn</a>
         <button data-theme-toggle aria-label="Switch to dark mode" class="theme-toggle">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -573,7 +574,71 @@
       </div>
     </section>
 
-    <!-- Educational Section -->
+    <!-- BMI Eligibility by Medication -->
+    <section id="medication-eligibility" style="padding:60px 0; background:var(--color-surface-2); border-top:1px solid var(--color-border);">
+      <div class="container">
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,1rem+2vw,2.25rem);color:var(--color-text);text-align:center;margin-bottom:12px">BMI Eligibility by Medication</h2>
+        <p style="font-size:var(--text-base);color:var(--color-text-muted);text-align:center;max-width:600px;margin:0 auto 40px">Each GLP-1 medication has different FDA-approved indications and BMI thresholds. Find the full guide for your medication below.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:1000px;margin:0 auto">
+
+          <!-- Ozempic card -->
+          <a href="/ozempic-bmi.html" style="display:block;padding:28px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:16px;text-decoration:none;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='0 4px 16px rgba(13,148,136,0.12)';this.style.borderColor='var(--color-primary)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--color-border)'">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <span style="font-size:11px;font-weight:600;background:var(--color-primary-light);color:var(--color-primary);padding:3px 10px;border-radius:99px">Semaglutide</span>
+              <span style="font-size:12px;color:var(--color-text-faint)">Novo Nordisk</span>
+            </div>
+            <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--color-text);margin:0 0 8px">Ozempic&#8480;</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 0 16px;line-height:1.6">FDA-approved for type 2 diabetes. No BMI threshold on label. Frequently prescribed off-label for weight management at BMI &ge;30 or &ge;27 with comorbidity.</p>
+            <div style="display:flex;align-items:center;gap:6px;font-size:var(--text-sm);font-weight:600;color:var(--color-primary)">
+              Read Full Guide <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- Wegovy card -->
+          <a href="/wegovy-bmi.html" style="display:block;padding:28px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:16px;text-decoration:none;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='0 4px 16px rgba(13,148,136,0.12)';this.style.borderColor='var(--color-primary)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--color-border)'">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <span style="font-size:11px;font-weight:600;background:var(--color-primary-light);color:var(--color-primary);padding:3px 10px;border-radius:99px">Semaglutide 2.4 mg</span>
+              <span style="font-size:12px;color:var(--color-text-faint)">Novo Nordisk</span>
+            </div>
+            <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--color-text);margin:0 0 8px">Wegovy&#8480;</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 0 16px;line-height:1.6">FDA-approved for chronic weight management. BMI &ge;30, or BMI &ge;27 with a weight-related comorbidity. Also approved for cardiovascular risk reduction.</p>
+            <div style="display:flex;align-items:center;gap:6px;font-size:var(--text-sm);font-weight:600;color:var(--color-primary)">
+              Read Full Guide <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- Mounjaro card -->
+          <a href="/mounjaro-bmi.html" style="display:block;padding:28px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:16px;text-decoration:none;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='0 4px 16px rgba(13,148,136,0.12)';this.style.borderColor='var(--color-primary)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--color-border)'">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <span style="font-size:11px;font-weight:600;background:var(--color-primary-light);color:var(--color-primary);padding:3px 10px;border-radius:99px">Tirzepatide</span>
+              <span style="font-size:12px;color:var(--color-text-faint)">Eli Lilly</span>
+            </div>
+            <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--color-text);margin:0 0 8px">Mounjaro&#8480;</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 0 16px;line-height:1.6">FDA-approved for type 2 diabetes. Dual GIP/GLP-1 mechanism. Same molecule as Zepbound. Frequently used off-label for weight management with the strongest average outcomes of any GLP-1.</p>
+            <div style="display:flex;align-items:center;gap:6px;font-size:var(--text-sm);font-weight:600;color:var(--color-primary)">
+              Read Full Guide <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- Zepbound card -->
+          <a href="/zepbound-bmi.html" style="display:block;padding:28px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:16px;text-decoration:none;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='0 4px 16px rgba(13,148,136,0.12)';this.style.borderColor='var(--color-primary)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--color-border)'">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <span style="font-size:11px;font-weight:600;background:var(--color-primary-light);color:var(--color-primary);padding:3px 10px;border-radius:99px">Tirzepatide</span>
+              <span style="font-size:12px;color:var(--color-text-faint)">Eli Lilly</span>
+            </div>
+            <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--color-text);margin:0 0 8px">Zepbound&#8480;</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 0 16px;line-height:1.6">FDA-approved for weight management (BMI &ge;30 or &ge;27 with comorbidity) and the first-ever drug approved for obstructive sleep apnea. Highest average weight loss of any approved obesity drug.</p>
+            <div style="display:flex;align-items:center;gap:6px;font-size:var(--text-sm);font-weight:600;color:var(--color-primary)">
+              Read Full Guide <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+        </div>
+        <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:24px">Not medical advice. Always consult a licensed healthcare provider.</p>
+      </div>
+    </section>
+
+        <!-- Educational Section -->
     <section class="education-section" id="learn">
       <div class="container">
         <h2 class="section-title">Understanding BMI &amp; GLP-1 Medications</h2>
@@ -696,7 +761,11 @@
           <a href="https://www.glp1maps.com" target="_blank" rel="noopener">GLP1Maps.com</a>
           <a href="https://www.theglp1guide.net" target="_blank" rel="noopener">TheGLP1Guide.net</a>
           <a href="/about.html">About</a>
-          <a href="#" rel="noopener">Terms &amp; Privacy</a>
+          <a href="/ozempic-bmi.html">Ozempic BMI</a>
+          <a href="/wegovy-bmi.html">Wegovy BMI</a>
+          <a href="/mounjaro-bmi.html">Mounjaro BMI</a>
+          <a href="/zepbound-bmi.html">Zepbound BMI</a>
+          <a href="https://www.insuranceglp1.com" target="_blank" rel="noopener">Insurance GLP-1</a>
         </div>
       </div>
       <div class="footer-bottom" style="display:block">
